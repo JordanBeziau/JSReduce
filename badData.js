@@ -39,7 +39,7 @@ const characters = [luke, han, anakin];
 const isFatherJedi = character => {
   const path = 'parents.father.jedi';
   return path.split('.').reduce((obj, field) => {
-    if(obj) {
+    if (obj) {
       return obj[field];
     }
     return false;
